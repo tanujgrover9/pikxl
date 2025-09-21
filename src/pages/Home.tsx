@@ -1,12 +1,12 @@
 
 import { motion } from "framer-motion";
-import { Mail, FolderOpen, Rocket,Link} from "lucide-react";
+import { Mail, FolderOpen, Rocket} from "lucide-react";
 import heroPreview from "../assets/image-generator-header.png";
 import FreepikTutorials from "../sections/FreepikTutorials";
 import Gallery from "../components/Imagegrid";
 import ToolsSection from "../components/Feature";
 import Testimonial from "../components/Testimonials";
-
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -64,14 +64,14 @@ export default function Home() {
             className="mt-10 flex flex-wrap justify-center gap-5"
           >
           <Link
-  href="/upload"
+  to="/upload"
   className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl font-semibold text-white shadow-lg transition-transform transform hover:scale-105"
 >
   Upload Your Work
 </Link>
 
 <Link
-  href="/marketplace"
+  to="/marketplace"
   className="px-8 py-3 border border-white/20 rounded-xl text-gray-200 hover:bg-white/10 transition"
 >
   Explore Marketplace
