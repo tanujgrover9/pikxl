@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FiHeart, FiShare2, FiShoppingCart } from "react-icons/fi";
 
@@ -51,3 +50,4 @@ export default function ImageCard({ item }: ImageCardProps) {
     </motion.div>
   );
 }
+
