@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Mail, FolderOpen, Rocket} from "lucide-react";
+import { Mail, FolderOpen, Rocket, Link} from "lucide-react";
 import heroPreview from "../assets/image-generator-header.png";
 import FreepikTutorials from "../sections/FreepikTutorials";
 import Gallery from "../components/Imagegrid";
@@ -62,18 +62,14 @@ export default function Home() {
             transition={{ delay: 0.6 }}
             className="mt-10 flex flex-wrap justify-center gap-5"
           >
-            <a
-              href="/upload"
-              className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl font-semibold text-white shadow-lg hover:scale-105 transition"
-            >
-              Upload Your Work
-            </a>
-            <a
-              href="/marketplace"
-              className="px-8 py-3 border border-white/20 rounded-xl text-gray-200 hover:bg-white/10 transition"
-            >
-              Explore Marketplace
-            </a>
+          <Link href="/upload" className="px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-xl font-semibold text-white shadow-lg hover:scale-105 transition">
+  Upload Your Work
+</Link>
+
+<Link href="/marketplace" className="px-8 py-3 border border-white/20 rounded-xl text-gray-200 hover:bg-white/10 transition">
+  Explore Marketplace
+</Link>
+
           </motion.div>
         </div>
       </section>
